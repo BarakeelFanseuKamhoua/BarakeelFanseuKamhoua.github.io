@@ -140,3 +140,5 @@ Contributions are what make the open source community such an amazing place to l
 # License
 
 Distributed under the `MIT` License. See [LICENSE](https://github.com/hashirshoaeb/portfolio/blob/main/LICENSE) for more information.
+
+<!-- "predeploy": "next build && next export && cp CNAME out/CNAME && cp .nojekyll out/.nojekyll" -->

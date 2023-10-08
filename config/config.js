@@ -32,7 +32,7 @@ export const intro = {
 		{
 			title: "Contact",
 			link: "bfk@connect.ust.hk",
-			isPrimary: true,
+			isPrimary: false,
 		},
 		{
 			title: "Github",
@@ -59,7 +59,7 @@ export const about = {
 	title: "Who I am",
 	description: [
 		"I am a Christian Cameroonian. I am a curent Computer Science and Engineering (CSE) student at the Hong Kong University of Science and Technology (HKUST) under Professor Huamin QU, starting August 2023. I hold a Master of Science in Industrial Engineering from HKUST, and a Batchelor of Technology in this same discipline from Nelson Mandela University (NMU).",
-		"I have three years of research experience as a Research Assistant from the Chinese University of Hong Kong (CUHK) under professor James CHENG. I equally have industrial experiance as a Software Engingeer specializing in R&D for algorithm developement and deployment in image processing for real-time embedded systems.",
+		"I have three years of research experience as a Research Assistant from the Chinese University of Hong Kong (CUHK) under professor James CHENG. I equally have industrial experience as a Software Engingeer specializing in R&D for algorithm developement and deployment in image processing for real-time embedded systems at Meridian Innovation (at HKSTP).",
 		"When I’m not programming, reading papers, or trying to find a new idea, I love hanging out with peers, family, and freinds from church.",
 	],
 }
@@ -69,7 +69,7 @@ export const work = {
 	cards: [
 		{
 			title: "CSE PhD Student",
-			description: "I am pursuing a PhD in CSE, with focus on Data Visualization, Pattern Discovery, Artificial Inteligence, Machine Learning.",
+			description: "I am pursuing a PhD in CSE, with focus in Data Visualization, Pattern Discovery, Artificial Inteligence, and Machine Learning.",
 			icons: null,
 		},
 		// {
@@ -103,7 +103,7 @@ export const projects = {
 			icons: [
 				{
 					icon: faGoogle,
-					link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
+					link: "https://dl.acm.org/doi/10.1145/3544977",
 				},
 				{
 					icon: faGithub,
@@ -158,7 +158,7 @@ export const projects = {
 
 export const contact = {
 	title: "Get in touch",
-	description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at bfk@connect@gmail.com.",
+	description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at bfk@connect.ust.hk.",
 	buttons: [
 		{
 			title: "Email Me",
