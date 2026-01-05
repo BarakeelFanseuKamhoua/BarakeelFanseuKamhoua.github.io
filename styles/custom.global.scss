@@ -1,0 +1,267 @@
+// Custom.scss
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+
+// 2. Include any default variable overrides here
+
+// $primary-background: #FFFFFF;
+// $secondary-background: #F7F7F7;
+// $tertiary-background: #365B6D;
+
+// $primary-font: #000000;
+// $secondary-font: #F7F7F7;
+// $tertiary-font: #365B6D;
+// $inverted-font: #FFFFFF;
+
+// bootstrap overrides 
+$primary: #365B6D;
+$secondary: #F7F7F7;
+$light: #FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+$font-family-sans-serif: -apple-system, 'Barlow', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$card-border-radius: 15px;
+
+
+
+// font 
+// Title
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: bold;
+// font-size: 64px;
+// line-height: 77px;
+
+// Heading1
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: bold;
+// font-size: 50px;
+// line-height: 60px;
+
+// Heading2
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 24px;
+// line-height: 29px;
+
+// Lead Text
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 18px;
+// line-height: 22px;
+
+// Normal
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 15px;
+// line-height: 18px;
+
+
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+
+// Layout & components (optional Bootstrap components)
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+// Helpers
+@import "~bootstrap/scss/helpers";
+// Utilities
+@import "~bootstrap/scss/utilities/api";
+
+
+// 5. Add additional custom code here
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon-style {
+  font-family: $font-family-sans-serif;
+  color: $primary;
+}
+
+
+.card-work {
+  transition: box-shadow .3s;
+}
+
+.card-work:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.card-image {
+  transition: all .3s;
+  border-radius: $card-border-radius;
+  box-shadow: 1rem 1rem $primary;
+}
+
+.card-image:hover {
+  transform: translate(-0.5rem, -0.5rem);
+  box-shadow: 2rem 2rem $primary;
+}
+
+// Publication Styles
+.publication-card {
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(54, 91, 109, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+.publication-image-container {
+  width: 100%;
+  max-width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f7 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+}
+
+.publication-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.publication-content {
+  h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: $primary;
+    margin-bottom: 0.8rem;
+    
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.publication-description {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  // color: $primary;
+  color: #1e2135;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.publication-status {
+  display: inline-block;
+  background-color: #e8f4f8;
+  color: $primary;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.publication-link-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  background-color: $primary;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(54, 91, 109, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  svg {
+    font-size: 1rem;
+  }
+}
+
+// Responsive adjustments for publications section
+@media (max-width: 768px) {
+  .publication-image-container {
+    max-width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .publication-links {
+    justify-content: center;
+  }
+}
